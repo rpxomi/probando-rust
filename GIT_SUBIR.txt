@@ -128,6 +128,17 @@ git push -u origin hola-mundo
 ########################################
 
 
+[4]
+y para seguir agregando archivos...
+que esten en diferentes ubicaciones de la computadora
+se tiene que repetir el paso de crear un README.md
+poner el nombre de la nueva rama con git branch -M
+y hacer un push con ese nombre de rama
+al mismo repositorio de antes
+https://github.com/rpxomi/probando-rust.git
+para que el "main" siga quedando limpio
+
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 RUST
