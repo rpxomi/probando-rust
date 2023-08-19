@@ -1,0 +1,149 @@
+GITHUB
+
+[ inicializar un repositorio local... ]
+
+echo "# probando-rust" >> README.md
+git init
+git status
+git config core.autocrlf false
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rpxomi/probando-rust.git
+git push -u origin main
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[ subir a un repositorio ya creado en internet! ]
+
+git remote add origin https://github.com/rpxomi/probando-rust.git
+git branch -M main
+git push -u origin main
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git branch
+
+git branch <nueva rama>
+
+git checkout <cambiar-a-rama>
+
+git branch -d <borrar-una-rama>
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+des-agregar todos los archivos
+que se hayan agregado por "git add":
+git rm -r cached .
+
+remover la asociacion que tiene el -repositorio local-
+con el -repositorio de GitHub- que esta en internet:
+git remote remove origin
+
+"origin", hace referencia a la pagina web de GitHub en internet
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+PARA SUBIR ARCHIVOS A LA RAMA "MAIN"
+
+Y DESPUES SUBIR OTRAS ARCHIVOS
+QUE ESTEN EN UNA UBICACIÓN DIFERENTE DE LA COMPUTADORA
+
+Y QUE SE ALMACENEN EN UNA "NUEVA RAMA"
+¡¡¡ PARA QUE EL "MAIN" QUEDE LIMPIO !!!
+
+
+[1]
+desde la pagina web de GitHub...
+crear un repositorio
+y dejarlo vacio sin ningun archivo "README.md" ni nada
+¡¡¡ SOLO usarlo para copiar la URL de ese repositorio !!!
+
+
+[2]
+en la computadora...
+crear una carpeta
+solo crear un "README.md" dentro de esa carpeta
+una vez que se haya terminado de modificar todo
+inicializar Git dentro de ella
+y subirla al "main"
+del repositorio de GitHub
+que esta en internet 
+########################################
+mkdir probando-rust
+cd probando-rust
+
+notepad README.md
+# probando-rust
+
+git init
+git status
+
+git config core.autocrlf false
+git add README.md
+
+git commit -m "Primera subida"
+git branch -M main
+
+git remote add origin https://github.com/rpxomi/probando-rust.git
+git push -u origin main
+########################################
+
+
+[3]
+en una ubicación diferente de la computadora... 
+crear una nueva carpeta
+crear un archivo README.md
+crear un proyecto de Rust con la herramienta Cargo
+una vez que se haya terminado de modifcar las cosas
+subir el contenido de esta nueva carpeta
+al mismo repositorio de antes
+pero que ahora use una rama diferente
+para que el "main" quede limpio
+########################################
+cargo new hola-mundo
+cd hola-mundo
+
+notepad README.md
+# hola-mundo
+
+el .gitignore lo crea Cargo
+para que no se suban los archivos de Rust
+que hayan sido compilado al probar el programa...
+
+git status
+
+git config core.autocrlf false
+git add .
+
+git commit -m "Se sube ejemplo Hola mundo"
+git branch -M hola-mundo
+
+git remote add origin https://github.com/rpxomi/probando-rust.git
+git push -u origin hola-mundo
+########################################
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+RUST
+
+src/main.rs
+
+/*
+rustup doc std::fmt
+cargo new <nombre-del-proyecto>
+cargo check
+cargo build
+cargo build --release
+cargo run
+cargo run --release
+*/
+
+fn main() {
+    println!( "¡Hola 🌍! Soy Super Juan y estoy probando Rust." );
+}
