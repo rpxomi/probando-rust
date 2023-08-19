@@ -129,14 +129,25 @@ git push -u origin hola-mundo
 
 
 [4]
-y para seguir agregando archivos...
-que esten en diferentes ubicaciones de la computadora
-se tiene que repetir el paso de crear un README.md
-poner el nombre de la nueva rama con git branch -M
-y hacer un push con ese nombre de rama
-al mismo repositorio de antes
-https://github.com/rpxomi/probando-rust.git
-para que el "main" siga quedando limpio
+y para seguir agregando archivos al mismo repositorio
+pero que esten en diferentes ubicaciones de la computadora...
+
+se tienen que repetir los pasos de crear un proyecto con Cargo
+y dentro de la carpeta raiz de ese proyecto crear un README.md
+
+para que una vez que se haya terminado de modificar todo
+se elija el nombre que va a tener la rama nueva
+git branch -M rama-nueva
+
+y despues se agregue el origen
+del mismo repositorio de GitHub de antes que esta en internet
+git remote add origin https://github.com/rpxomi/probando-rust.git
+
+para subir al repositorio en internet los archivos desde la computadora
+poniendo el nombre que eligimos para la rama nueva
+git push -u origin rama-nueva
+
+y que el "main" siga quedando limpio
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
