@@ -113,7 +113,7 @@ notepad README.md
 
 el .gitignore lo crea Cargo
 para que no se suban los archivos de Rust
-que hayan sido compilado al probar el programa...
+que se hayan compilado al probar el programa...
 
 git status
 
