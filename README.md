@@ -1,2 +1,2 @@
 # probando-rust
-Siguiendo guia de Google para Rust
+Siguiendo la guia de Google para Rust
