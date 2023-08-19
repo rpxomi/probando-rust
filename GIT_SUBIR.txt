@@ -129,23 +129,23 @@ git push -u origin hola-mundo
 
 
 [4]
-y para seguir agregando archivos al mismo repositorio
-pero que esten en diferentes ubicaciones de la computadora...
+y para seguir usando el mismo repositorio
+para agregar archivos que esten en diferentes ubicaciones de la computadora
 
 se tienen que repetir los pasos de crear un proyecto con Cargo
 y dentro de la carpeta raiz de ese proyecto crear un README.md
 
 para que una vez que se haya terminado de modificar todo
-se elija el nombre que va a tener la rama nueva
-git branch -M rama-nueva
+se elija el nombre que va a tener la nueva rama
+git branch -M nueva-rama
 
 y despues se agregue el origen
 del mismo repositorio de GitHub de antes que esta en internet
 git remote add origin https://github.com/rpxomi/probando-rust.git
 
 para subir al repositorio en internet los archivos desde la computadora
-poniendo el nombre que eligimos para la rama nueva
-git push -u origin rama-nueva
+poniendo el nombre que eligimos para la nueva rama
+git push -u origin nueva-rama
 
 y que el "main" siga quedando limpio
 
