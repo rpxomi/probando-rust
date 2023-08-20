@@ -154,16 +154,73 @@ y que el "main" siga quedando limpio
 
 RUST
 
+https://www.rust-lang.org/tools/install 
+
+En algún momento de la instalación,
+recibirá un mensaje que explica
+que también necesitará
+las herramientas de compilación de MSVC
+para Visual Studio 2013 o posterior.
+
+Para adquirir las herramientas de compilación,
+deberá instalar Visual Studio 2022.
+
+Cuando se le pregunte qué cargas de trabajo instalar, incluya:
+· Desktop Development with C++
+· Windows 10 o 11 SDK
+· English language pack component (junto con cualquier otro paquete de idioma de su elección)
+
+
+
+Verifique que Rust
+esté en su variable de sistema %PATH%
+de la siguiente manera:
+
+In Windows CMD, use:
+> echo %PATH%
+
+In PowerShell, use:
+> echo $env:Path
+
+
+
+Plugin para Visual Studio Code (VSCode):
+rust-analyzer
+
+
+########################################
+
 src/main.rs
 
 /*
+rustup update
+rustup self uninstall
+
+rustup --version
+cargo --version
+
+rustup doc
 rustup doc std::fmt
+
 cargo new <nombre-del-proyecto>
+
 cargo check
 cargo build
-cargo build --release
 cargo run
+
+cargo check --release
+cargo build --release
 cargo run --release
+
+cargo clean
+
+rustup component add rustfmt
+cargo fmt
+
+rustup component add clippy
+cargo clippy
+
+cargo fix
 */
 
 fn main() {
