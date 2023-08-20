@@ -216,7 +216,7 @@ cargo build --release
 cargo run --release
 
 rustc main.rs
-./main
+./main.exe
 
 cargo clean
 
