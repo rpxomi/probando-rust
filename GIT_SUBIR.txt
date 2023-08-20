@@ -187,7 +187,7 @@ In PowerShell, use:
 
 
 
-Plugin para Visual Studio Code (VSCode):
+Plug-in para Visual Studio Code (VSCode):
 rust-analyzer
 
 
