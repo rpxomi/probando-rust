@@ -215,6 +215,9 @@ cargo check --release
 cargo build --release
 cargo run --release
 
+rustc main.rs
+./main
+
 cargo clean
 
 rustup component add rustfmt
