@@ -121,6 +121,8 @@ git status
 git config core.autocrlf false
 git add .
 
+git status
+
 git commit -m "Se sube ejemplo Hola mundo"
 git branch -M hola-mundo
 
