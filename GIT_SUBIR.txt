@@ -223,12 +223,15 @@ rustc main.rs
 
 cargo clean
 
+FORMATEADOR DE CODIGO
 rustup component add rustfmt
 cargo fmt
 
+LINTER
 rustup component add clippy
 cargo clippy
 
+ARREGLAR WARNINGS
 cargo fix
 */
 
