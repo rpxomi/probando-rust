@@ -1,2 +1,2 @@
 # probando-rust
-Adivinar numero Parte 1
+Adivinar numero Parte 2
