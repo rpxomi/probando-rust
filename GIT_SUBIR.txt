@@ -48,7 +48,7 @@ git remote remove origin
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-PARA SUBIR ARCHIVOS A LA RAMA "MAIN"
+PARA PRIMERO SUBIR ARCHIVOS A LA RAMA "MAIN"
 
 Y DESPUES SUBIR OTRAS ARCHIVOS
 QUE ESTEN EN UNA UBICACIÓN DIFERENTE DE LA COMPUTADORA
