@@ -18,7 +18,6 @@ fn main() {
             .read_line(&mut eleccion)
             .expect("No se pudo leer la linea");
 
-        
         let eleccion: u32 = eleccion
             .trim()
             .parse()
@@ -26,7 +25,6 @@ fn main() {
 
         println!("Tu eleccion: {eleccion}");
 
-        
         match eleccion.cmp(&numero_secreto) {
             Ordering::Less => println!("Muy chico..."),
             Ordering::Greater => println!("Muy grande..."),
@@ -38,5 +36,4 @@ fn main() {
     }
 
     println!();
-
 }
