@@ -9,4 +9,4 @@ AHORA | The Rust Programming Language "the book"<br>
 · <b>adivinar-parte2</b>: crear numero al azar y comprobar coincidencia<br>
 · <b>adivinar-parte3</b>: crear un loop y poder detenerlo al ganar<br>
 · <b>adivinar-parte4</b>: continuar, si se ingresa un tipo de dato incorrecto<br>
-· <b>variables</b>: `const`, `let`, `mut` y sombreado<br>
+· <b>variables</b>: `const`, `let`, `mut` y sombreado de nombres<br>
